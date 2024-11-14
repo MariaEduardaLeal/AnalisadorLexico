@@ -4,7 +4,7 @@ def obter_especificacao_tokens():
         ('NUMEROS', r'\b\d+\b'),
         ('IDENTIFICADORES', r'\b[a-zA-Z_][a-zA-Z0-9_]*\b'),
         ('OPERADORES', r'[+\-*/=<>!&|^%]'),
-        ('STRING', r'"([^"\\]*(\\.[^"\\]*)*)"'),
+        ('STRING', r'"([^"\\]*(\\.[^"\\]*)*)"|\'([^\'\\]*(\\.[^\'\\]*)*)\''),
         ('DELIMITADORES', r'[(){};,.]'),
         ('IGNORAR', r'[ \t\n]+'),
         ('INDEVIDO', r'.'),
